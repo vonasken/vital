@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'dashboard/main'
+
   devise_for :users
   get 'basepage/index'
   root "basepage#index"

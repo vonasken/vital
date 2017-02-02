@@ -73,15 +73,16 @@
                 <div class="col-sm-7">
                     <div class="header-content">
                         <div class="header-content-inner">
-                            <h1>Vital Health-Tech Services, revolutionizing healthcare in third world countries by providing a secure network for care establishments to gather patient data.  </h1>
 
 
 <!-- ========================================================================================================== -->
 <% if user_signed_in? %>
-  Logged in as <strong><%= current_user.email %></strong>.
+<h1>Hello, <strong><%= current_user.email %></strong>! </h1>
+  <%= link_to 'Dashboard', dashboard_main_path %>
   <%= link_to 'Edit profile', edit_user_registration_path %>
   <%= link_to "Logout", destroy_user_session_path, method: :delete  %>
 <% else %>
+<h1>Vital Health-Tech Services, revolutionizing healthcare in third world countries by providing a secure network for care establishments to gather patient data.  </h1>
  <%= link_to "Sign up", new_user_registration_path, :class => "btn btn-outline btn-xl page-scroll" %>
   <%= link_to "Login", new_user_session_path, :class => "btn btn-outline btn-xl page-scroll" %>
 <% end %>
@@ -90,21 +91,21 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-5">
+                <!-- <div class="col-sm-5">
                     <div class="device-container">
                         <div class="device-mockup iphone6_plus portrait white">
                             <div class="device">
                                 <div class="screen">
-                                    <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
+                                    Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else!
                                     <img src="assets/demo-screen-1.jpg" class="img-responsive" alt="">
                                 </div>
                                 <div class="button">
-                                    <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+                                    You can hook the "home button" to some JavaScript events or just remove it
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </header>
