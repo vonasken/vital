@@ -78,7 +78,7 @@
 <!-- ========================================================================================================== -->
 <% if user_signed_in? %>
 <h1>Hello, <strong><%= current_user.email %></strong>! </h1>
-  <%= link_to 'Dashboard', dashboard_main_path %>
+  <%= link_to 'Dashboard', dashboard_main_path, :class => "btn btn-outline btn-xl page-scroll" %>
   <%= link_to 'Edit profile', edit_user_registration_path %>
   <%= link_to "Logout", destroy_user_session_path, method: :delete  %>
 <% else %>
